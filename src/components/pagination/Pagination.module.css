@@ -1,0 +1,32 @@
+.paginationStyle {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  gap: 5px;
+  margin: 10px 10px;
+}
+
+.activeStyle {
+  background-color: #1e50ff;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.pageItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 6px 12px;
+  height: 40px;
+  width: 40px;
+  margin-top: 6px;
+}
+
+.disabledPageItem {
+  color: #eee;
+  visibility: hidden;
+}
