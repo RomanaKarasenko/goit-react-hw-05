@@ -1,0 +1,19 @@
+.movieList {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.movieItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
