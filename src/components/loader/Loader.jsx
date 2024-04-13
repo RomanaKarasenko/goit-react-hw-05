@@ -1,9 +1,9 @@
 import { Hearts } from "react-loader-spinner";
-import styles from "./LoaderComponent.module.css";
+import css from "./Loader.module.css";
 
 const Loader = ({ loading }) => {
   return (
-    <div className={styles.loaderStyle}>
+    <div className={css.loaderStyle}>
       <Hearts
         visible={loading}
         height="80"
