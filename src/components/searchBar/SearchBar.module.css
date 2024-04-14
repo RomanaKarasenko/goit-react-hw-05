@@ -1,35 +1,36 @@
 .searchForm {
   min-width: 200px;
   width: 40%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 .searchInput {
   font-family: inherit;
-  width: 100%;
   font-size: 20px;
   padding: 10px 10px 10px 40px;
-  border: 5px solid #f4ed6bd4;
+  border: 5px solid #fff59d;
   border-radius: 10px;
   outline: none;
+  margin-top: 25px;
 }
 
 .searchInput:hover,
 .searchInput:focus {
-  border-color: #5ad4f3;
+  border-color: #ffc0cb;
 }
 
 .searchBtn {
   font-size: 25px;
-  position: absolute;
   border: none;
-  top: 5px;
-  right: 1px;
   padding: 8px;
-  background-color: inherit;
-  border-color: #1176f2;
+  margin-top: 25px;
+  background-color: #fff59d;
 }
 
 .searchBtn:hover,
 .searchBtn:focus {
-  color: #5ad4f3;
+  background-color: #ffc0cb;
 }

@@ -10,9 +10,9 @@
 }
 
 .activeStyle {
-  background-color: #1176f2;
+  background-color: #ffc0cb;
   color: #fff;
-  border-radius: 50%;
+  border-radius: 30%;
 }
 
 .pageItem {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchReviews } from "../../api/API";
+import { fetchMovieReviews} from "../../api/API";
 
 import Loader from "../loader/Loader";
 import MovieReviewsItem from "../movieReviewsItem/MovieReviewsItem";
@@ -19,7 +19,7 @@ const MovieReviews = () => {
       try {
         setLoading(true);
         setError(null);
-        const data = await fetchReviews(movieId);
+        const data = await fetchMovieReviews(movieId);
         setReviews(data);
       } catch (error) {
         setError(error.message);

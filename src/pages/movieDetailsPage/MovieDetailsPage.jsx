@@ -60,8 +60,8 @@ const MovieDetailsPage = () => {
       <div className={`container ${css.movieDetails}`}>
         <div className={css.backLinkContainer}>
           <Link to={backLinkHref}>
-            <button className={css.backBtn}>
-            <FaBackspace  size="20" />
+            <button className={css.backButton}>
+              <FaBackspace size="20" />
               Back
             </button>
           </Link>
@@ -131,14 +131,8 @@ const MovieDetailsPage = () => {
             </div>
             <Suspense fallback={<Loader />}>
               <Routes>
-                <Route
-                  path={`${location.pathname}/cast`}
-                  element={<MovieCast />}
-                />
-                <Route
-                  path={`${location.pathname}/reviews`}
-                  element={<MovieReviews />}
-                />
+              <Route path="cast" element={<MovieCast />} />
+              <Route path="reviews" element={<MovieReviews />} />
               </Routes>
             </Suspense>
           </div>

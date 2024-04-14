@@ -8,7 +8,7 @@ const Loader = ({ loading }) => {
         visible={loading}
         height="80"
         width="80"
-        color="#5ad4f3"
+        color="#ffc0cb"
         ariaLabel="hearts-loading"
         wrapperClass=""
       />
