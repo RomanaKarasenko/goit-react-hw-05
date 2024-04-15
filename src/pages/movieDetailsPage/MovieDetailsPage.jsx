@@ -116,15 +116,15 @@ const MovieDetailsPage = () => {
             <div className={css.moreInfo}>
               <NavLink
                 className={getNavLinkClassNames}
-                to={`${location.pathname}/cast`}
+                to={`/movies/${movieId}/cast`}
                 state={location.state}
               >
                 Cast
               </NavLink>
               <NavLink
                 className={getNavLinkClassNames}
-                to={`${location.pathname}/reviews`}
-                state={location.state}
+                to={`/movies/${movieId}/reviews`}
+  state={location.state}
               >
                 Reviews
               </NavLink>

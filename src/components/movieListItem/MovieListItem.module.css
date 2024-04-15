@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-    background-color: #fff59d;
-    padding: 5px;
-   
-  }
-  
-  .movieTitle {
-    font-size: 20px;
-    max-width: 280px;
-    overflow: hidden;
-  
-   
-    
-    
-    
-  }
+  background-color: #c8e6c9;
+  padding: 5px;
+}
+
+.movieTitle {
+  font-size: 20px;
+  max-width: 280px;
+  overflow: hidden;
+  color: #2ecc71;
+  transition: color 0.3s ease;
+}
+
+.movieTitle:hover {
+  color: #27ae60;
+}

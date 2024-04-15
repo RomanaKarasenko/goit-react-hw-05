@@ -1,23 +1,30 @@
-.header{
-    display: flex;
-    justify-content: center;
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #2ecc71;
+  padding: 20px;
 }
 
-.navContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 210px;
-    height: 50px;
-    border-radius: 20px;
-    padding: 15px;
-    background-color: #fff59d;
-    font-size: 20px;
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #c8e6c9;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
 }
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
 
+.navContainer:hover {
+  background-color: #a3d6a4;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }

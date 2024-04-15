@@ -1,101 +1,109 @@
 .movieDetailsThumb {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .backLinkContainer {
-    border-bottom: 1px solid #f6f6f6;
-    border-top: 1px solid #f6f6f6;
-    padding: 20px 0;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-align: center; /* Додано для центрування вмісту по горизонталі */
-  }
-  
-  .backButton {
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 5px 15px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    background-color: #fff59d;
-  }
-  
-  .backButton:hover,
-  .backButton:focus {
-    background-color: #ffc0cb;
-  }
-  
-  .movieDetails {
-    margin-bottom: 30px;
-  }
-  
-  .movieDetailsTitle {
-    font-size: 30px;
-    text-align: center;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-  
-  .movieDetailsTagline {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 5px;
-  }
-  
-  .movieDetailsText {
-    font-size: 17px;
-    line-height: 1.2;
-    margin-bottom: 5px;
-  }
-  
-  .spanAccent {
-    font-weight: 700;
-  }
-  
-  .movieDetailsTitleFilm {
-    font-size: 25px;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-  
-  .movieDetailsGenresList {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    list-style: none;
-    gap: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .moreInfo {
-    padding: 20px 0;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-align: center; /* Додано для центрування вмісту по горизонталі */
-  }
-  
-  .link {
-    padding: 10px 30px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    background-color: #fff59d;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.backLinkContainer {
+  border-bottom: 1px solid #c8e6c9;
+  border-top: 1px solid #c8e6c9;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.backButton {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2ecc71;
+}
+
+.backButton:hover,
+.backButton:focus {
+  background-color: #c8e6c9;
+}
+
+.movieDetails {
+  margin-bottom: 30px;
+}
+
+.movieDetailsTitle {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.movieDetailsTagline {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.movieDetailsText {
+  font-size: 17px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.spanAccent {
+  font-weight: 700;
+}
+
+.movieDetailsTitleFilm {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.movieDetailsGenresList {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style: none;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.moreInfo {
+  padding: 20px 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.link {
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2ecc71;
+}
+
+.link:hover,
+.link:focus {
+  background-color: #c8e6c9;
+  color: #fff;
+}

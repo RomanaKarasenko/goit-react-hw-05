@@ -1,18 +1,31 @@
-.castItemImg{
-    width: 200px;
-    height: 250px;
+.castItemCont {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
 }
-.castItemCont{
-    text-align: center;
-    padding: 10px;
+
+.castItemTitle,
+.castItemCharacter {
+  color: #2ecc71;
 }
-.castItemTitle{
-    letter-spacing: -0.02em;
-    line-height: 0.89em;
-    margin-bottom: 10px;
+
+.castItemTitle {
+  letter-spacing: -0.02em;
+  line-height: 0.89em;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
-.castItemCharacter{
-    font-size: 15px;
-    letter-spacing: -0.02em;
-    line-height: 0.89em;
+
+.castItemCharacter {
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  line-height: 0.89em;
+}
+
+.castItemCont:hover .castItemTitle {
+  color: #27ae60;
+}
+
+.castItemCont:focus .castItemTitle {
+  color: #1abc9c;
 }

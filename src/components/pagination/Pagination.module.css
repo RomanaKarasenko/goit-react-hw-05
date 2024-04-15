@@ -10,7 +10,7 @@
 }
 
 .activeStyle {
-  background-color: #ffc0cb;
+  background-color: #2ecc71;
   color: #fff;
   border-radius: 30%;
 }
@@ -27,6 +27,5 @@
 }
 
 .disabledPageItem {
-  color: #eee;
-  visibility: hidden;
+  color: #ccc;
 }
