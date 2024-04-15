@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense, lazy } from "react";
+import { useState, useEffect, Suspense, lazy, useRef } from "react";
 import {
   Link,
   NavLink,
@@ -28,7 +28,7 @@ const MovieDetailsPage = () => {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
   const backLinkHref = location.state?.from ?? "/";
-
+  const locationRef = useRef(location.state);
   const formatDate = (date) => {
     return format(new Date(date), "MMMM dd yyyy");
   };
@@ -49,6 +49,10 @@ const MovieDetailsPage = () => {
     };
     fetchData();
   }, [movieId]);
+
+  useEffect(() => {
+    locationRef.current = location.state;
+  }, [location.state]);
 
   const getNavLinkClassNames = ({ isActive }) =>
     clsx(css.link, {
@@ -124,15 +128,15 @@ const MovieDetailsPage = () => {
               <NavLink
                 className={getNavLinkClassNames}
                 to={`/movies/${movieId}/reviews`}
-  state={location.state}
+                state={location.state}
               >
                 Reviews
               </NavLink>
             </div>
             <Suspense fallback={<Loader />}>
               <Routes>
-              <Route path="cast" element={<MovieCast />} />
-              <Route path="reviews" element={<MovieReviews />} />
+                <Route path="cast" element={<MovieCast />} />
+                <Route path="reviews" element={<MovieReviews />} />
               </Routes>
             </Suspense>
           </div>
